@@ -41,17 +41,18 @@ body {
   background-color: aliceblue;
   display: flex;
 }
-.picture{
-    margin: 1em;
+.picture {
+  margin: 1em;
 }
 .desktop-picture {
   max-width: 400px;
 }
-
-details {
-
-  text-decoration: none;
+.faq {
   margin: 1rem;
+}
+details {
+  text-decoration: none;
+  margin: 0, 1rem;
 }
 details > summary {
   list-style: none;
