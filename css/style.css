@@ -1,0 +1,76 @@
+body {
+  background-image: linear-gradient(
+    180deg,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12;
+  margin: auto;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+.faq {
+}
+.container {
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 900px;
+  max-height: 445px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.element {
+  padding: 4rem;
+  background-color: aliceblue;
+  display: flex;
+}
+.picture{
+    margin: 1em;
+}
+.desktop-picture {
+  max-width: 400px;
+}
+
+details {
+
+  text-decoration: none;
+  margin: 1rem;
+}
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details summary:hover {
+  color: orange;
+}
+details[open] > summary {
+  font-weight: 700;
+}
+hr {
+  color: hsl(240, 5%, 91%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
