@@ -15,31 +15,29 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-  body {
-  }
-
   .container {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 .faq {
+
 }
 .container {
+display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   max-width: 900px;
   max-height: 445px;
-  border-radius: 10px;
-  overflow: hidden;
+  /* overflow: hidden; */
   margin: auto;
 }
 
 .element {
   padding: 4rem;
   background-color: aliceblue;
-  display: flex;
+  border-radius: 10px;
 }
 .picture {
   margin: 1em;
