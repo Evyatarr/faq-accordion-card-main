@@ -47,8 +47,8 @@ h1 {
   max-width: 400px;
 }
 
-#bg-pattern{
-    z-index: -1;
+#bg-pattern {
+  z-index: -1;
 }
 .faq {
   padding: 2rem;
@@ -78,38 +78,46 @@ details[open] > summary::marker {
   transform: rotate(180deg);
 }
 hr {
-  color:hsla(240, 4%, 91%, 0.418);
+  color: hsla(240, 4%, 91%, 0.418);
 }
 
-
 @media screen and (max-width: 800px) {
-    .container {
-      flex-direction: column;
-    }
-    .element {
-      display: flex;
-      flex-direction: column;
-      height: 70vh;
-      width: 80vw;
-      padding: auto;
-    }
-    .picture{
-        width: 50vw;
-    }
-    .faq{
-        text-align: center;
-    }
+  .container {
+    flex-direction: column;
   }
-  
-  @media screen and (min-width: 800px) {
-  .picture,.desktop-picture{
+  .element {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    width: 80vw;
+    padding: auto;
+  }
+  .picture {
+    width: 50vw;
+  }
+  .faq {
+    text-align: center;
+  }
+
+  .mobile-picture {
+    position:absolute;
+    top: 10px;
+    z-index: 99;
+    width: 60vw;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .picture,
+  .desktop-picture {
     margin-left: 0px;
   }
-  .element{
+  .element {
     padding: 4rem;
     padding-left: 0px;
   }
-    }
+}
 
 .attribution {
   font-size: 11px;
