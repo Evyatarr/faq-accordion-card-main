@@ -86,7 +86,7 @@ details[open] > summary::marker {
   transform: rotate(180deg);
 }
 hr {
-  color: hsl(240, 5%, 91%);
+  color:hsla(240, 4%, 91%, 0.418);
 }
 
 .attribution {
