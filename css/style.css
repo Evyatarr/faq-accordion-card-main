@@ -6,12 +6,17 @@ body {
   );
   align-items: center;
   font-family: "Kumbh Sans", sans-serif;
-  font-size: 12;
+  /* font-size: 12px; */
   margin: auto;
   height: 100vh;
   align-items: center;
   justify-content: center;
   display: flex;
+  color: hsl(240, 6%, 50%);
+}
+
+b,
+h1 {
   color: hsl(238, 29%, 16%);
 }
 
@@ -19,11 +24,12 @@ body {
   .container {
     flex-direction: column;
   }
-  .element{
+  .element {
     display: flex;
     flex-direction: column;
   }
 }
+
 .faq {
 }
 .container {
@@ -34,7 +40,6 @@ body {
   justify-content: center;
   max-width: 900px;
   max-height: 445px;
-  /* overflow: hidden; */
   margin: auto;
 }
 
@@ -42,8 +47,10 @@ body {
   display: flex;
   flex-direction: row;
   padding: 4rem;
-  background-color: aliceblue;
-  border-radius: 10px;
+  padding-left: 0px;
+  box-shadow: 0px 1px 10px;
+  background-color: white;
+  border-radius: 20px;
 }
 .picture {
   margin: 1em;
@@ -52,6 +59,7 @@ body {
   max-width: 400px;
 }
 .faq {
+  padding: 2rem;
   margin: 1rem;
 }
 details {
@@ -65,15 +73,14 @@ details > summary {
   direction: rtl;
   text-align: left;
   list-style-position: inside;
+  color: hsl(237, 12%, 33%);
 }
 details summary:hover {
   color: hsl(14, 88%, 65%);
 }
 details[open] > summary {
   font-weight: 700;
-}
-details[open] > summary {
-  font-weight: 700;
+  color: hsl(238, 29%, 16%);
 }
 details[open] > summary::marker {
   transform: rotate(180deg);
@@ -94,4 +101,5 @@ footer {
   bottom: 0;
   display: block;
   margin: auto;
+  justify-content: center;
 }
