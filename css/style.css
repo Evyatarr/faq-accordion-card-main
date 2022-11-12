@@ -20,16 +20,6 @@ h1 {
   color: hsl(238, 29%, 16%);
 }
 
-@media screen and (max-width: 800px) {
-  .container {
-    flex-direction: column;
-  }
-  .element {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
 .faq {
 }
 .container {
@@ -57,6 +47,10 @@ h1 {
 }
 .desktop-picture {
   max-width: 400px;
+}
+
+#bg-pattern{
+    z-index: -1;
 }
 .faq {
   padding: 2rem;
@@ -88,6 +82,23 @@ details[open] > summary::marker {
 hr {
   color:hsla(240, 4%, 91%, 0.418);
 }
+
+
+@media screen and (max-width: 800px) {
+    .container {
+      flex-direction: column;
+    }
+    .element {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (min-width: 800px) {
+  .picture{
+      margin-left: 0px;
+  }
+    }
 
 .attribution {
   font-size: 11px;
