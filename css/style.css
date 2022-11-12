@@ -91,12 +91,17 @@ hr {
     .element {
       display: flex;
       flex-direction: column;
+      height: 70vh;
+      width: 80vw;
+    }
+    .picture{
+        width: 50vw;
     }
   }
   
   @media screen and (min-width: 800px) {
-  .picture{
-      margin-left: 0px;
+  .picture,.desktop-picture{
+    margin-left: 0px;
   }
     }
 
