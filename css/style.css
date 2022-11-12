@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   display: flex;
+  color: hsl(238, 29%, 16%);
 }
 
 @media screen and (max-width: 800px) {
@@ -50,17 +51,26 @@ body {
 details {
   text-decoration: none;
   margin: 0, 1rem;
+  text-align: left;
 }
 details > summary {
   list-style-image: url(../images/icon-arrow-down.svg);
   cursor: pointer;
+  direction: rtl;
+  text-align: left;
+  list-style-position: inside;
 }
 details summary:hover {
-  color: orange;
+  color: hsl(14, 88%, 65%);
 }
 details[open] > summary {
   font-weight: 700;
-  list-style-image: url(../images/icon-arrow-down.svg);
+}
+details[open] > summary {
+  font-weight: 700;
+}
+details[open] > summary::marker {
+  transform: rotate(180deg);
 }
 hr {
   color: hsl(240, 5%, 91%);
@@ -74,5 +84,8 @@ hr {
   color: hsl(228, 45%, 44%);
 }
 footer {
+  position: fixed;
+  bottom: 0;
   display: block;
+  margin: auto;
 }
