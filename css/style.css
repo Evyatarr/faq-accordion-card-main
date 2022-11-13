@@ -46,13 +46,15 @@ h1 {
 .desktop-picture {
   max-width: 400px;
 }
-
 #bg-pattern {
   z-index: -1;
 }
 .faq {
   padding: 2rem;
   margin: 1rem;
+}
+.sum{
+  direction: ltr;
 }
 details {
   text-decoration: none;
@@ -64,7 +66,7 @@ details > summary {
   cursor: pointer;
   direction: rtl;
   text-align: left;
-  list-style-position: inside;
+  list-style-position: inherit;
   color: hsl(237, 12%, 33%);
 }
 details summary:hover {
@@ -79,6 +81,7 @@ details[open] > summary::marker {
 }
 hr {
   color: hsla(240, 4%, 91%, 0.418);
+  width: calc(100% + 1.5rem);
 }
 
 @media screen and (max-width: 800px) {
@@ -112,6 +115,8 @@ hr {
   .picture,
   .desktop-picture {
     margin-left: 0px;
+    right: 70px;
+position: relative;
   }
   .element {
     padding: 4rem;
